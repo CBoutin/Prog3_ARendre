@@ -48,21 +48,21 @@ public class Login extends HttpServlet {
 
 	private void process(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		Utilisateur user = Utilisateur.get(request.getParameter("name"));
-
-		if (user.getMot_de_passe().compareTo(request.getParameter("pwd"))) {
-			HttpSession session = request.getSession();
-			session.setAttribute("name") = request.getParameter("name");
-			request.setAttribute("connexion_status", 0);
-		} else {
-			request.setAttribute("connexion_status", 1);
-		}
-
-		getServletContext().getNamedDispatcher(
-				getServletContext().getContextPath() + "/Action").forward(
-				request, response);
-		;
+//		// TODO Auto-generated method stub
+//		Utilisateur user = Utilisateur.get(request.getParameter("name"));
+//
+//		if (user.getMot_de_passe().compareTo(request.getParameter("pwd"))) {
+//			HttpSession session = request.getSession();
+//			session.setAttribute("name") = request.getParameter("name");
+//			request.setAttribute("connexion_status", 0);
+//		} else {
+//			request.setAttribute("connexion_status", 1);
+//		}
+//
+//		getServletContext().getNamedDispatcher(
+//				getServletContext().getContextPath() + "/Action").forward(
+//				request, response);
+//		;
 	}
 
 }
