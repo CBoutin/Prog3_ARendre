@@ -1,4 +1,4 @@
-package Bean;
+package lpsil.beans;
 
 public class Utilisateur {
 

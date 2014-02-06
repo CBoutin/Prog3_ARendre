@@ -30,6 +30,8 @@
 			<li><a
 				href="${pageContext.request.contextPath}/jsp/page/Commande.jsp">Consulter
 					votre commande</a></li>
+			<li><a
+				href="${pageContext.request.contextPath}/Logout">Deconnexion</a></li>
 		</ul>
 
 	</div>

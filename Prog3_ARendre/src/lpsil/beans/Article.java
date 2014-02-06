@@ -1,15 +1,17 @@
-package Bean;
+package lpsil.beans;
 
-public class Commande {
+public class Article {
 
 	private String Code;
 	private String Nom;
 	private Double Prix;
+	private int Stock;
 
-	public Commande(String code, String nom, Double prix) {
+	public Article(String code, String nom, Double prix, int stock) {
 		Code = code;
 		Nom = nom;
 		Prix = prix;
+		Stock = stock;
 	}
 
 	public String getCode() {
@@ -36,10 +38,18 @@ public class Commande {
 		Prix = prix;
 	}
 
+	public int getStock() {
+		return Stock;
+	}
+
+	public void setStock(int stock) {
+		Stock = stock;
+	}
+
 	@Override
 	public String toString() {
-		return "Commande [Code=" + Code + ", Nom=" + Nom + ", Prix=" + Prix
-				+ "]";
+		return "Article [Code=" + Code + ", Nom=" + Nom + ", Prix=" + Prix
+				+ ", Stock=" + Stock + "]";
 	}
 
 }

@@ -9,4 +9,33 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+  	<description></description>
+  	<servlet-name>Logout</servlet-name>
+  	<servlet-class>lpsil.controler.Logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Logout</servlet-name>
+  	<url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<description></description>
+  	<servlet-name>Action</servlet-name>
+  	<servlet-class>lpsil.controler.Action</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Action</servlet-name>
+  	<url-pattern>/Action</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<description></description>
+  	<servlet-name>Login</servlet-name>
+  	<servlet-class>lpsil.controler.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/Login</url-pattern>
+  </servlet-mapping>
 </web-app>
